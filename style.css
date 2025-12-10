@@ -7,6 +7,7 @@
 
 body {
     font-family: "Inter", sans-serif;
+    color: rgb(48, 48, 48);
 }
 
 header {
@@ -24,8 +25,8 @@ header span {
 
 .main-section {
     background-color: #fafaff;
-    padding-top: 60px;
-    padding-bottom: 356px;
+    padding-top: 60px 0;
+    ;
     /* Стили для первой секции */
 }
 
@@ -33,6 +34,7 @@ header span {
     font-weight: 700;
     font-size: 48px;
     color: #303030;
+    margin-bottom: 20px;
     /* Стили для заголовка в первой секции */
 }
 
@@ -40,13 +42,12 @@ header span {
     font-weight: 400;
     font-size: 18px;
     color: #303030;
-    margin-top: 20px;
     /* Стили для текста в первой секции */
 }
 
 .main-image {
-    width: 715px;
-    height: 508px;
+    max-width: 715px;
+    max-height: 508px;
 
     /* Стили для изображения в первой секции */
 }
@@ -84,7 +85,7 @@ select {
 
 .frameworks-list {
     list-style-image: url(./assets/image/solar_map-arrow-up-bold.svg);
-    margin-left: 30px;
+    padding: 0 20px;
     font-weight: 400;
     font-size: 16px;
     color: #303030;
@@ -93,7 +94,7 @@ select {
 
 .books-list {
     list-style: 1;
-    margin-left: 30px;
+    padding: 0 20px;
 
     font-weight: 400;
     font-size: 16px;
@@ -113,6 +114,10 @@ select {
     padding: 10px 12px;
     border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(48, 48, 48, 0.2);
     /* Стили для односточного поля ввода текста */
 }
 
@@ -131,14 +136,18 @@ select {
 }
 
 .line {
-    margin-top: 60px;
+    margin: 60px 0;
     border: none;
     border: 1px solid rgba(48, 48, 48, 0.3);
     /* Стили для линии */
 }
 
 table {
-    margin-top: 60px;
+    font-size: 14px;
+    font-size: 14px;
+    text-align: left;
+    color: #303030;
+
     border-collapse: collapse;
     /* Стили для таблицы */
 }
@@ -147,9 +156,6 @@ th, td {
     border: 1px solid #95a1bb;
     padding: 12px 15px;
 
-    font-size: 14px;
-    text-align: left;
-    color: #303030;
     /* Стили для ячеек таблицы */
 }
 
@@ -163,5 +169,6 @@ footer {
     font-weight: 400;
     font-size: 14px;
     color: #2965f1;
+    text-decoration: none;
     /* Стили для футера */
 }
